@@ -1,0 +1,327 @@
+/*=========================================
+			General Styles
+===========================================*/
+
+/*----------------------------------------------------------------Fonts-----*/
+
+body {
+	font-family: 'Tinos', serif;
+}
+
+p {
+	font-family: 'Tinos', serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1.imageReplace {
+	margin: 0;
+}
+
+h2 {	
+	font-weight: bold;
+	font-size: 1.875em;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+ul {
+	padding-left: 16px;
+}
+
+a {
+	color: #DB2C42;	
+	text-decoration: none;	
+}
+
+a:hover {
+	background-color: #DB2C42;
+	color: #fff;
+}
+
+footer a {
+	color: #5BCCEB;
+}
+
+footer a:hover {
+	background-color: rgba(0, 0, 0, 0);
+	color: #ccc;
+}
+
+.museumLink {
+	text-decoration: underline;
+}
+
+.museumLink:hover {
+	background-color: rgba(0, 0, 0, 0);
+	color: #9A9999;
+}
+
+input[type="submit"] {
+	background-color: #DB2C42;
+	color: #fff;
+	font-size: .875em;
+}
+
+.memberHeader p {
+	color: #aaa;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+/*-------------------------------------------------------------------Hacks---*/
+
+.hiddenText {
+	position: absolute;
+	left: -9999px;
+}
+
+.imageReplace {
+	text-indent: -9999px;                 
+    background-image: url(../images/logo.jpg);
+    background-size: contain;  
+}
+
+.clearfix { 
+	zoom: 1; 
+}
+
+.clearfix:before, .clearfix:after { 
+	content: ""; 
+	display: table; 
+}
+
+.clearfix:after { 
+	clear: both; 
+}
+
+/*-----------------------------------------------------------------Layout---*/
+
+.siteWrapper {
+	width: 90%;
+	margin: 0 5%;
+}
+
+.logoContainer {                
+    height: auto;
+    width: 145px;
+    margin: 1.25em auto 0;  
+}
+
+.siteHeader, main {
+	padding-bottom: 35px;
+	border-bottom: 1px solid #ccc;
+}
+
+
+/*=========================================
+				Site Header
+===========================================*/
+
+.mainNav ul {
+	padding: 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.mainNav li {
+	text-align: center;
+	list-style: none;
+}
+
+.mainNav a {
+	display: block;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+	margin: 0;
+}
+
+.mainNav li:last-child a {
+	border-bottom: none;
+	border-radius: 0 0 4px 4px;
+}
+
+.mainNav li:first-child a {
+	border-radius: 4px 4px 0 0;
+}
+
+/*-----------------------------------------------------------Search Box---*/
+
+/*.searchBox {
+	background: #eee;
+	padding: .625em;
+}
+
+.searchBox input {
+	display: block;
+	width: 100%;
+}
+
+.searchBox input[type="search"] {
+	margin-bottom: .625em;
+	padding: 10px 0;
+	width: 100%;
+    border: 0 solid #B9BDC1;
+    color: #797979;
+    -moz-box-shadow: 0 1px 4px #999 inset;
+    -webkit-box-shadow: 0 1px 4px #999 inset;
+    box-shadow: 0 1px 4px #999 inset;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.searchBox input[type="submit"] {
+  	border:none;
+  	padding: 10px 0;
+  	border-radius: 3px;
+}
+
+.searchBox input[type="submit"]:hover {
+	background: #fc2C42;
+}*/
+
+/*=========================================
+				Form Styles
+===========================================*/
+
+.formSection {
+	padding-bottom: 40px;
+}
+
+.memberLevel input[type="radio"], .memberLevel input[type="checkbox"] {
+	width: auto;
+	display: inline-block;
+	margin-right: 7px;
+}
+
+.memberLevel {
+	border-bottom: 1px solid #ccc;
+}
+
+.formContainer .memberLevel label {
+	display: block;
+	margin-bottom: .875em;
+}
+
+.formContainer {
+	background: #eee;
+	padding: .625em;
+}
+
+.formContainer input {
+	display: block;
+	width: 100%;
+}
+
+.formContainer input[type="text"], .formContainer input[type="email"], .formContainer input[type="search"] {
+	margin-bottom: .625em;
+	padding: 15px 0;
+	width: 100%;
+    border: 0 solid #B9BDC1;
+    color: #797979;
+    -moz-box-shadow: 0 1px 4px #999 inset;
+    -webkit-box-shadow: 0 1px 4px #999 inset;
+    box-shadow: 0 1px 4px #999 inset;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.formContainer input[type="search"] {
+	padding: 10px 0;
+}
+
+.formContainer input[type="submit"] {
+  	border:none;
+  	padding: 10px 0;
+  	border-radius: 3px;
+}
+
+.formContainer input[type="submit"]:hover {
+	background: #fc2C42;
+}
+
+.formContainer fieldset {
+	border: none;
+}
+
+.formContainer h3 {
+	font-size: 1.25em;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 800;
+	display: block;
+	margin: 5px 0 18px;
+}
+
+.formContainer label {
+	display: inline-block;
+	margin-bottom: .5em;
+}
+
+.regButton {
+	margin-top: 10px;
+}
+
+/*-----------------------------------------------------------Package---*/
+
+.package {
+	background: #fff;
+	border-radius: 3px;
+	padding: 15px;
+	margin: 10px 0;
+}
+
+.package p {
+	font-size: 1.25em;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 800;
+	text-align: center;
+	margin: 0;
+}
+
+.package ul {
+	line-height: 1.5;
+	padding-left: 18px;
+}
+
+.package li {
+	margin: 10px 0;
+}
+
+
+/*=========================================
+				Main Section
+===========================================*/
+
+main p {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+main ul {
+	margin: 0;
+}
+
+main li {
+	line-height: 1.5;
+}
+
+.memberForm {
+	border-radius: 3px;
+	margin-top: 45px;
+}
+
+
+
+
+
+
+
+
+

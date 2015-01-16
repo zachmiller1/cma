@@ -4,6 +4,9 @@
 		<meta charset="utf-8">
 		<title>Columbia Museum of Art</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Tinos:400,700,400italic|Merriweather+Sans:800,400italic,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 
@@ -14,7 +17,9 @@
 			<div class="container siteHeader">
 
 				<!-- Main Logo -->
-				<h1><a href="index.html">Columbia Museum of Art</a></h1>
+				<div class="logoContainer">
+					<h1 class="imageReplace"><a href="index.html">Columbia Museum of Art</a></h1>
+				</div>
 				
 				<!-- Main Navigation -->
 				<nav class="mainNav">
@@ -30,9 +35,9 @@
 				</nav><!-- end mainNav -->
 				
 				<!-- Searchbox -->
-				<form action="">
+				<form action="#" class="formContainer">
 					<input type="search" name="search" id="search">
-					<input type="submit" for="search" value="Seach CMA">
+					<input type="submit" for="search" value="Search CMA">
 				</form>
 			</div><!-- end siteHeader -->
 
@@ -54,7 +59,7 @@
 				<ul>
 					<li>Free unlimited admission for one year</li> 
 					<li>Discounts on concert tickets, classes, and lectures.</li> 
-					<li>Free admission to over <a href="#">80 Museums</a> across the Southeast.</li> 
+					<li>Free admission to over <a href="#" class="museumLink">80 Museums</a> across the Southeast.</li> 
 					<li>Exclusive invitations to special events, including Exhibition Members' Opening Parties.</li>
 					<li>Member Appreciation Day - Several times a year, the museum offers exclusive members special savings in the gift shop, opportunities to bring a friend, and more.</li>
 					<li>10% discount the Museum Shop.</li>
@@ -67,12 +72,12 @@
 
 
 			<!-- memberForm -->
-			<form action="#" class="container memberForm">
+			<form action="#" class="formContainer memberForm">
 			
 				<!-- Customer Info -->
-				<fieldset class="customerInfo">
+				<fieldset class="formSection customerInfo">
 
-					<legend>Tell Us About Yourself</legend>
+					<h3>Tell Us About Yourself</h3>
 
 						<label for="firstName">First Name:</label> 
 						<input type="text" name="firstName" id="firstName">
@@ -97,77 +102,81 @@
 				
 				<!-- Membership Level Diagrams -->
 
-				<div class="chooseLevel">
-					<h3>Choose Your Membership Level</h3> 
+				<!-- formSection -->
+				<fieldset class="formSection">
+					<div class="chooseLevel">
+						<h3>Choose Your Membership Level</h3> 
+						
+						<!-- Individual -->
+						<div class="package">
+							<p>Individual $50</p> 
+							<ul>
+								<li>Standard Membership Benefits.</li> 
+								<li>Admission benefits for one adult.</li>
+							</ul>
+						</div><!-- end package -->
+						
+						<!-- Family -->
+						<div class="package">
+							<p>Family $75</p> 
+							<ul>
+								<li>Admission benefits for two adults and children (18 and under).</li>
+								<li>Priority Registration and 20% discount on summer camp and art classes.</li>
+								<li>Free admission to all Family Fun Events.</li>
+							</ul>
+						</div><!-- end package -->
+						
+						<!-- Patron -->
+						<div class="package">
+							<p>Patron $250</p> 
+							<ul>
+								<li>All benefits of Family Membership.</li> 
+								<li>Free admission to almost <a href="#" class="museumLink">600 museums</a> in North America, including over <a href="#" class="museumLink">80 museums</a> across the Southeast.</li>
+								<li>Free admission for two guests per visit.</li>
+								<li>Printed and Mailed Collections quarterly magazine and opening reception invitations.</li>
+							</ul>
+						</div><!-- end package -->
 					
-					<!-- Individual -->
-					<div class="individualPackage">
-						<p>Individual $50</p> 
-						<ul>
-							<li>Standard Membership Benefits.</li> 
-							<li>Admission benefits for one adult.</li>
-						</ul>
-					</div>
-					
-					<!-- Family -->
-					<div class="familyPackage">
-						<p>Family $75</p> 
-						<ul>
-							<li>Admission benefits for two adults and children (18 and under).</li>
-							<li>Priority Registration and 20% discount on summer camp and art classes.</li>
-							<li>Free admission to all Family Fun Events.</li>
-						</ul>
-					</div>
-					
-					<!-- Patron -->
-					<div class="patronPackage">
-						<p>Patron $250</p> 
-						<ul>
-							<li>All benefits of Family Membership.</li> 
-							<li>Free admission to almost 600 museums in North America, including over 80 museums across the Southeast.</li>
-							<li>Free admission for two guests per visit.</li>
-							<li>Printed and Mailed Collections quarterly magazine and opening reception invitations.</li>
-						</ul>
-					</div>
-
-				</div><!-- end customerInfo -->
+					</div><!-- end customerInfo -->
+				</fieldset><!-- end formSection -->
 
 			
 				<!-- Membership Level Select -->
-				<fieldset class="container memberLevel">
+				<div class="formSection memberLevel">
 
-					<legend>Membership Level</legend> 
-	
-					<input type="radio" name="memberType" value="individual" id="individual">
-					<label for="">Individual Membership $50</label> 
-
-					<input type="radio" name="memberType" value="family" id="family">
-					<label for="">Family Membership $75</label> 
-
-					<input type="radio" name="memberType" value="patron" id="patron">
-					<label for="">Patron $250</label>
-
-				</fieldset><!-- end memberLevel -->
-
-				
-				<!-- Additional Options Checkboxes -->
-				<fieldset class="addOptions">
-
-					<legend>Additional Options</legend> 
-
-					<input type="checkbox" name="options" value="CDL" id="CDL">
-					<label for="CDL">Columbia Design League $100</label>
-
-					<input type="checkbox" name="options" value="contemp" id="contemp">
-					<label for="contemp">Contemporaries $100</label> 
-
-					<input type="checkbox" name="options" value="FoAAAC" id="FoAAAC">
-					<label for="FoAAAC">Friends of African American Art &amp; Culture</label>
-
-				</fieldset><!-- end addOptions -->
+					<fieldset>
+					
+						<h3>Membership Level</h3> 
+						
+						
+						<label for="individual"><input type="radio" name="memberType" value="individual" id="individual">Individual Membership $50</label> 
+						
+						<label for="family"><input type="radio" name="memberType" value="family" id="family">Family Membership $75</label> 
+					
+						<label for="patron"><input type="radio" name="memberType" value="patron" id="patron">Patron $250</label>
+					
+					</fieldset><!-- end memberLevel -->
+					
+					
+					<!-- Additional Options Checkboxes -->
+					<fieldset class="addOptions">
+					
+						<h3>Additional Options</h3> 
+					
+						
+						<label for="CDL"><input type="checkbox" name="options" value="CDL" id="CDL">Columbia Design League $100</label>
+					
+						<label for="contemp"><input type="checkbox" name="options" value="contemp" id="contemp">Contemporaries $100</label> 
+						
+						<label for="FoAAAC"><input type="checkbox" name="options" value="FoAAAC" id="FoAAAC">Friends of African American Art &amp; Culture</label>
+					
+					</fieldset><!-- end addOptions -->
+				</div><!-- end formSection -->
 				
 				<!-- Complete Registration Button -->
-				<input type="submit" value="Complete Registration">
+				<fieldset class="regButton">
+					<input type="submit" value="Complete Registration">
+				</fieldset>
 
 			</form><!-- end memberForm -->
 
@@ -219,6 +228,8 @@
 				
 				<!-- Footer Navigation -->
 				<nav class="footerNav">
+					<h2 class="hiddenText">Footer Navigation</h2>
+
 					<ul>
 						<li><a href="">Upcoming Events</a></li>
 						<li><a href="">Chamber Music on Main</a></li>
