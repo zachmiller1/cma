@@ -3,7 +3,6 @@
 ===========================================*/
 
 /*----------------------------------------------------------------Fonts-----*/
-
 body {
 	font-family: 'Tinos', serif;
 }
@@ -14,21 +13,24 @@ p {
 
 h1, h2, h3, h4 {
 	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: bold;
 }
 
 h1.imageReplace {
 	margin: 0;
 }
 
-h2 {	
-	font-weight: bold;
-	font-size: 1.875em;
+h2 {		
+	font-size: 2em;
 	margin-bottom: 0;
 }
 
 h3 {
-	font-weight: bold;
 	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.25em;
 }
 
 ul {
@@ -120,71 +122,35 @@ input[type="submit"] {
 
 
 /*=========================================
-				Site Header
+				General Nav
 ===========================================*/
 
-.mainNav ul {
+.generalNav ul {
 	padding: 0;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
 
-.mainNav li {
+.generalNav li {
 	text-align: center;
 	list-style: none;
 }
 
-.mainNav a {
+.generalNav a {
 	display: block;
 	border-bottom: 1px solid #ccc;
 	padding: 10px 0;
 	margin: 0;
 }
 
-.mainNav li:last-child a {
+.generalNav li:last-child a {
 	border-bottom: none;
 	border-radius: 0 0 4px 4px;
 }
 
-.mainNav li:first-child a {
+.generalNav li:first-child a {
 	border-radius: 4px 4px 0 0;
 }
-
-/*-----------------------------------------------------------Search Box---*/
-
-/*.searchBox {
-	background: #eee;
-	padding: .625em;
-}
-
-.searchBox input {
-	display: block;
-	width: 100%;
-}
-
-.searchBox input[type="search"] {
-	margin-bottom: .625em;
-	padding: 10px 0;
-	width: 100%;
-    border: 0 solid #B9BDC1;
-    color: #797979;
-    -moz-box-shadow: 0 1px 4px #999 inset;
-    -webkit-box-shadow: 0 1px 4px #999 inset;
-    box-shadow: 0 1px 4px #999 inset;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-}
-
-.searchBox input[type="submit"] {
-  	border:none;
-  	padding: 10px 0;
-  	border-radius: 3px;
-}
-
-.searchBox input[type="submit"]:hover {
-	background: #fc2C42;
-}*/
 
 /*=========================================
 				Form Styles
@@ -264,8 +230,9 @@ input[type="submit"] {
 	margin-bottom: .5em;
 }
 
-.regButton {
-	margin-top: 10px;
+.regButton input {
+	margin-top: 20px;
+	font-size: 1em;
 }
 
 /*-----------------------------------------------------------Package---*/
@@ -317,8 +284,50 @@ main li {
 	margin-top: 45px;
 }
 
+/*=========================================
+				Aside Section
+===========================================*/
 
+aside {
+	margin-top: 50px;
+	padding-top: 20px;
+	border-top: 1px solid #ccc;
+}
 
+/*=========================================
+				FOOTER
+===========================================*/
+
+footer {
+	background: #333;
+	padding: 40px 20px 30px;
+}
+
+.footerText {
+	margin-bottom: 50px;
+}
+
+footer p {
+	color: #fff;
+	text-align: center;
+	margin: 5px;
+}
+
+footer ul {
+	margin: 10px 0 0;
+	padding: 0;
+}
+
+footer li {
+	list-style: none;
+	display: inline;
+}
+
+footer a {
+	text-decoration: underline;
+	padding: 0 10px 0;
+	font-size: .875em;
+}
 
 
 
