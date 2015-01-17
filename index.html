@@ -35,7 +35,7 @@
 				</nav><!-- end mainNav -->
 				
 				<!-- Searchbox -->
-				<form action="#" class="formContainer">
+				<form action="#" class="formContainer clearfix">
 					<input type="search" name="search" id="search">
 					<input type="submit" for="search" value="Search CMA">
 				</form>
@@ -72,12 +72,14 @@
 
 
 			<!-- memberForm -->
-			<form action="#" class="formContainer memberForm">
+			<form action="#" class="formContainer memberForm clearfix">
 			
 				<!-- Customer Info -->
-				<fieldset class="formSection customerInfo">
+				<fieldset class="formSection customerInfo clearfix">
 
 					<h3>Tell Us About Yourself</h3>
+
+					<div class="textInputs1">
 
 						<label for="firstName">First Name:</label> 
 						<input type="text" name="firstName" id="firstName">
@@ -87,6 +89,9 @@
 
 						<label for="address">Address:</label>
 						<input type="text" name="address" id="address"> 
+					</div><!-- end textInputs1 -->
+
+					<div class="textInputs2">
 
 						<label for="username">Choose a User Name:</label> 
 						<input type="text" name="username" id="username">
@@ -96,6 +101,8 @@
 						
 						<label for="confirmEmail">Confirm Email:</label>
 						<input type="email" name="confirmEmail" id="confirmEmail">
+
+					</div><!--end textInputs2 -->
 
 				</fieldset><!-- end customerInfo -->
 
@@ -142,9 +149,9 @@
 
 			
 				<!-- Membership Level Select -->
-				<div class="formSection memberLevel">
+				<div class="formSection memberLevel clearfix">
 
-					<fieldset>
+					<fieldset class="selections">
 					
 						<h3>Membership Level</h3> 
 						
@@ -159,7 +166,7 @@
 					
 					
 					<!-- Additional Options Checkboxes -->
-					<fieldset class="addOptions">
+					<fieldset class="selections addOptions">
 					
 						<h3>Additional Options</h3> 
 					

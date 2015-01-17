@@ -331,6 +331,89 @@ footer a {
 
 
 
+/*=========================================
+				BREAKPOINTS
+===========================================*/
+
+
+/*-----------------------------------------------------------660px---*/
+
+@media screen and (min-width: 660px) {
+
+/*=======================
+		Header
+=======================*/
+
+.logoContainer {                
+    height: auto;
+    width: 145px;
+    margin: 1.25em auto 0;  
+}
+
+/*=======================
+		Search Box
+=======================*/
+
+	.formContainer input[type="search"] {
+		display: inline-block;
+		margin-bottom: 0;
+		width: 65%;
+		float: left;
+	}
+
+	input[for="search"] {
+		display: inline-block;
+		height: 38px;
+		width: 33%;
+		float: right;
+	}
+
+}
+
+/*=======================
+		Form
+=======================*/
+
+.memberForm fieldset {
+	margin: 0;
+}
+
+.textInputs1 {
+	float: left;
+	width: 48%;
+}
+
+.textInputs2 {
+	float: right;
+	width: 48%;
+}
+
+.selections {
+	float: left;
+	width: 48%;
+}
+
+.addOptions {
+	float: right;
+	width: 44%;
+}
+
+.regButton {
+	width: 35%;
+	float: right;
+	font-size: 1.125em;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
