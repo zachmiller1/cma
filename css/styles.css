@@ -276,7 +276,7 @@ main ul {
 }
 
 main li {
-	line-height: 1.5;
+	line-height: 1.7;
 }
 
 .memberForm {
@@ -314,8 +314,10 @@ footer p {
 }
 
 footer ul {
-	margin: 10px 0 0;
+	margin: 10px 5% 0;
 	padding: 0;
+	width: 90%;
+	text-align: center;
 }
 
 footer li {
@@ -340,19 +342,19 @@ footer a {
 
 @media screen and (min-width: 660px) {
 
-/*=======================
-		Header
-=======================*/
+	/*=======================
+			Header
+	=======================*/
 
-.logoContainer {                
-    height: auto;
-    width: 145px;
-    margin: 1.25em auto 0;  
-}
+	.logoContainer {                
+	    height: auto;
+	    width: 145px;
+	    margin: 1.25em auto 0;  
+	}
 
-/*=======================
-		Search Box
-=======================*/
+	/*=======================
+			Search Box
+	=======================*/
 
 	.formContainer input[type="search"] {
 		display: inline-block;
@@ -368,45 +370,91 @@ footer a {
 		float: right;
 	}
 
+	/*=======================
+			Form
+	=======================*/
+
+	.memberForm fieldset {
+		margin: 0;
+	}
+
+	.textInputs1 {
+		float: left;
+		width: 48%;
+	}
+
+	.textInputs2 {
+		float: right;
+		width: 48%;
+	}
+
+	.selections {
+		float: left;
+		width: 48%;
+	}
+
+	.addOptions {
+		float: right;
+		width: 44%;
+	}
+
+	.regButton {
+		width: 35%;
+		float: right;
+		font-size: 1.125em;
+	}
+
+	/*=======================
+		  Second Nav
+	=======================*/
+
+	aside a {
+		color: #DB2C42;	
+		text-decoration: underline;	
+	}
+
+	aside a:hover {
+		background-color: transparent;
+		color: #999;
+	}
+
+	aside.generalNav {
+		margin-bottom: 20px;
+	}
+
+	aside.generalNav ul {
+		padding: 0;
+		border: none;
+		border-radius: 0;
+	}
+
+	aside.generalNav li {
+		text-align: left;
+		list-style: none;
+	}
+
+	aside.generalNav a {
+		display: block;
+		border-bottom: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	aside.generalNav li:last-child a {
+		border-bottom: none;
+		border-radius: 0;
+	}
+
+	aside.generalNav li:first-child a {
+		border-radius: 0;
+	}
+
+	.navList {
+		width: 33%;
+		float: left;
+	}
+
 }
-
-/*=======================
-		Form
-=======================*/
-
-.memberForm fieldset {
-	margin: 0;
-}
-
-.textInputs1 {
-	float: left;
-	width: 48%;
-}
-
-.textInputs2 {
-	float: right;
-	width: 48%;
-}
-
-.selections {
-	float: left;
-	width: 48%;
-}
-
-.addOptions {
-	float: right;
-	width: 44%;
-}
-
-.regButton {
-	width: 35%;
-	float: right;
-	font-size: 1.125em;
-}
-
-
-
-
 
 
 
