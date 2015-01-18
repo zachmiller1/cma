@@ -337,6 +337,14 @@ footer a {
 
 
 
+
+
+
+
+
+
+
+
 /*=========================================
 				BREAKPOINTS
 ===========================================*/
@@ -459,6 +467,11 @@ footer a {
 
 }
 
+
+
+
+
+
 /*-----------------------------------------------------------840px---*/
 
 @media screen and (min-width: 840px) {
@@ -471,6 +484,48 @@ footer a {
 		width: 256px;
 		height: 70px;
 		float: left;
+	}
+
+	.siteHeader {
+		position: relative;
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+
+	#searchBox {
+		position: absolute;
+		top: 45px;
+		right: 0;
+		background: transparent;
+		height: 53px;
+		width: 350px;
+		padding: 0;
+	}
+
+	#searchBox input[type="search"] {
+		padding: 8px 0;
+		width: 68%;
+	}
+
+	#searchBox input[type="submit"] {
+		height: 35px;
+		width: 30%;
+		padding: 8px 0;
+	}
+
+	.memberHeader {
+		background: #eee;
+		border-radius: 3px;
+		padding: .825em 1.5em;
+	}
+
+	.memberHeader h2 {
+		margin: 0;
+		font-size: 1.825em;
+	}
+
+	.memberHeader p {
+		margin-bottom: 10px;
 	}
 
 	/*=======================
@@ -497,12 +552,69 @@ footer a {
 		color: #ccc;
 	}
 
+	/*=======================
+		  	  Form
+	=======================*/
+
+	.chooseLevel {
+		padding: 10px;
+		background: #ccc;
+		border-radius: 3px;
+	}
+
+	.package {
+		display: block;
+		float: left;
+		width: 28.4%;
+		margin-right: 5px;
+	}
+
+	.chooseLevel .package:last-child {
+		margin-right: 0;
+	}
+
+	.regButton {
+		width: 28%;
+	}
+
+	.regButton input[type="submit"]:hover {
+		background: #60DBFF;
+		text-shadow: #aaa 0 1px;
+	}
+
 }
 
 
 
 
 
+
+/*-----------------------------------------------------------1000px---*/
+
+@media screen and (min-width: 1000px) {
+
+	/*=======================
+		  Main Section
+	=======================*/
+
+
+
+
+
+	/*=======================
+		  Aside Section
+	=======================*/
+
+	
+
+
+
+
+
+
+
+
+}
 
 
 
