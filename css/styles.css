@@ -119,6 +119,10 @@ input[type="submit"] {
     margin: 1.25em auto 0;  
 }*/
 
+.logoContainer {
+	position: relative;
+}
+
 .siteHeader, main {
 	padding-bottom: 35px;
 	border-bottom: 1px solid #ccc;
@@ -154,6 +158,27 @@ input[type="submit"] {
 
 .generalNav li:first-child a {
 	border-radius: 4px 4px 0 0;
+}
+
+/*----------------------------HAMBURGER---*/
+
+#menuButton {
+	position: absolute;
+	top: 25px;
+	right: 10px;
+	background: #DB2C42 url('../images/hamburger.png') no-repeat right;
+	padding: 4px 32px 5px 8px;
+	color: #fff;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+#menuButton:hover {
+	background: #5BCCEB url('../images/hamburger.png') no-repeat right;
+	color: #fff;
+	border: 1px solid #ccc;
 }
 
 /*=========================================
@@ -363,6 +388,13 @@ footer a {
 	    width: 220px;  
 	}
 
+	#menuButton {
+		height: auto;
+		width: auto;
+		top: 39px;
+		right: 39px;
+	}
+
 	/*=======================
 			Search Box
 	=======================*/
@@ -526,6 +558,10 @@ footer a {
 
 	.memberHeader p {
 		margin-bottom: 10px;
+	}
+
+	#menuButton {
+		display: none;
 	}
 
 	/*=======================
